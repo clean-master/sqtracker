@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 export default createContext({
-  locale: "en",
+  locale: "zh",
   setLocale: () => {},
   locales: [],
   getLocaleString: () => {},

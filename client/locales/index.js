@@ -6,10 +6,5 @@ import eo from "./eo.json";
 import fr from "./fr.json";
 
 export default {
-  en,
-  ru,
-  de,
   zh,
-  eo,
-  fr,
 };

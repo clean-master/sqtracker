@@ -68,6 +68,7 @@ export const uploadTorrent = async (req, res, next) => {
       const user = await User.findOne({ _id: req.userId }).lean();
 
       parsed.info.private = 1;
+      parsed.info.source = `${process.env.SQ_BASE_URL}`;
       parsed.announce = `${process.env.SQ_BASE_URL}/sq/${user.uid}/announce`;
       delete parsed["announce-list"];
 
