@@ -69,7 +69,8 @@ export const uploadTorrent = async (req, res, next) => {
 
       parsed.info.private = 1;
       parsed.info.source = `${process.env.SQ_BASE_URL}`;
-      console.log(parsed.info.source);
+      console.log("445645");
+      console.log(parsed.info);
       parsed.announce = `${process.env.SQ_BASE_URL}/sq/${user.uid}/announce`;
       delete parsed["announce-list"];
 
@@ -257,7 +258,8 @@ export const downloadTorrent = async (req, res, next) => {
     delete parsed["announce-list"];
     parsed.info.private = 1;
     parsed.info.source = `${process.env.SQ_BASE_URL}`;
-    console.log(parsed.info.source);
+    console.log("445645");
+    console.log(parsed.info);
 
     const fileName = `${parsed.info.name.toString()} - ${
       process.env.SQ_SITE_NAME
