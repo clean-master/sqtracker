@@ -164,7 +164,7 @@ const SqTracker = ({ Component, pageProps, initialTheme }) => {
   const [isServer, setIsServer] = useState(true);
   const [loading, setLoading] = useState(false);
   const [userStats, setUserStats] = useState();
-  const [locale, setLocale] = useState("en");
+  const [locale, setLocale] = useState("zh");
 
   const router = useRouter();
 
