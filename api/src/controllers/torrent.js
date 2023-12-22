@@ -69,8 +69,9 @@ export const uploadTorrent = async (req, res, next) => {
 
       parsed.info.private = 1;
       parsed.info.source = `${process.env.SQ_BASE_URL}`;
-      console.log("445645");
-      console.log(parsed.info);
+      console.error("445645");
+      console.log("[sq] initiating db connection...");
+      console.error(parsed);
       parsed.announce = `${process.env.SQ_BASE_URL}/sq/${user.uid}/announce`;
       delete parsed["announce-list"];
 
