@@ -155,7 +155,7 @@ const Loading = styled(LoaderAlt)`
 `;
 
 const getLocaleString = (locale) => (key) =>
-  locales[locale][key] ?? locales.en[key];
+  locales[locale][key] ?? locales.zh[key];
 
 const SqTracker = ({ Component, pageProps, initialTheme }) => {
   const [isMobile, setIsMobile] = useState(false);
