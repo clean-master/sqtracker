@@ -255,6 +255,7 @@ export const downloadTorrent = async (req, res, next) => {
     parsed.announce = `${process.env.SQ_BASE_URL}/sq/${user.uid}/announce`;
     delete parsed["announce-list"];
     parsed.info.private = 1;
+    parsed.info.source = `${process.env.SQ_BASE_URL}`;
 
     const fileName = `${parsed.info.name.toString()} - ${
       process.env.SQ_SITE_NAME
